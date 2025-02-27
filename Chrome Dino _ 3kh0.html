@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://studyisimportant.github.io/chrome-dino/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+	<meta name="color-scheme" content="light dark">
+	<link rel="apple-touch-icon" sizes="128x128" href="https://studyisimportant.github.io/chrome-dino/icons/icon-128.png">
+	<link rel="apple-touch-icon" sizes="256x256" href="https://studyisimportant.github.io/chrome-dino/icons/icon-256.png">
+	<meta name="theme-color" content="#fff">
+	<link rel="icon" href="https://studyisimportant.github.io/chrome-dino/favicon.ico">
+    <title>Chrome Dino | 3kh0</title>
+    <link rel="stylesheet" href="./Chrome Dino _ 3kh0_files/style.css">
+    <script src="./Chrome Dino _ 3kh0_files/game.js.download"></script>
+	<link rel="manifest" href="https://studyisimportant.github.io/chrome-dino/appmanifest.json">
+<script src="./Chrome Dino _ 3kh0_files/main.js.download"></script><style>@-webkit-keyframes intro { from { width:44px }to { width: 600px }}</style></head>
+
+<body id="t" class="offline arcade-mode">
+    <div id="main-frame-error" class="interstitial-wrapper">
+        <div id="main-content">
+            <div class="icon icon-offline" alt="" style="visibility: hidden;"></div>
+        </div>
+        <div id="offline-resources">
+            <img id="offline-resources-1x" src="./Chrome Dino _ 3kh0_files/100-error-offline.png">
+            <img id="offline-resources-2x" src="./Chrome Dino _ 3kh0_files/200-error-offline.png">
+            <template id="audio-resources"></template>
+        </div>
+		    <div id="messageBox" style="visibility: hidden;">
+         <h1 id="h1" style="font-family: -apple-system, BlinkMacSystemFont, &#39;Segoe UI&#39;, Roboto, Helvetica, Arial, sans-serif;">Press space/up to play</h1>
+    </div>
+    <div class="runner-container" style="width: 600px; transform: scale(3.18667) translateY(45px);"><canvas class="runner-canvas" width="600" height="150" style="width: 600px; height: 150px;"></canvas></div></div>
+
+
+<script src="./Chrome Dino _ 3kh0_files/register-sw.js.download"></script>
+<script>
+    document.onkeydown = function(evt) {
+    evt = evt || window.event;
+    if (evt.keyCode == 32 || evt.keyCode == 38) {
+        var box = document.getElementById("messageBox");
+        box.style.visibility="hidden";
+		}
+	};
+    
+    function is_touch_enabled() {
+            return ( 'ontouchstart' in window ) || 
+                   ( navigator.maxTouchPoints > 0 ) ||
+                   ( navigator.msMaxTouchPoints > 0 );
+    }
+    if ( is_touch_enabled() ) {
+        var box = document.getElementById("h1");
+        box.innerHTML = "Touch the screen to play";
+    }
+
+    // Hide text on touch devices
+    document.ontouchstart = touchDevices;
+    function touchDevices() {
+        var box = document.getElementById("messageBox");
+        box.style.visibility="hidden";
+    };
+
+</script>
+
+</body></html>
